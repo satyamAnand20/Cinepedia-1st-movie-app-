@@ -46,6 +46,12 @@
   transform: scale(1.2);
 }
 
+.search-icon{
+  /* display:none; */
+  color:#FDF12F;
+  font-size:2rem
+}
+
 .navbar-search{
   margin-top: 0.5rem;
   display: flex;
@@ -87,7 +93,7 @@
 
 .search-input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #666;
+  box-shadow: none;
 }
 
 .search-button {
@@ -160,11 +166,84 @@
   margin-top:0.7rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: none;
+  color: #FDF12F;
+  background-color: #0F0F0F;
 
 }
 
 .close-btn:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+
+.search-icon{
+  display:none}
+
+  .search-form2{
+    display: none;
+  }
+
+  .mobile-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0F0F0F;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(10px);  
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.search-form2 {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  background-color: #333;
+  padding: 0.6rem;
+  border-radius: 8px;
+}
+
+.search-input2 {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+.search-input2:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #666;
+  border: none;
+  box-shadow: none;
+}
+
+.search-icon {
+  display: none;
+}
+
+.close-btn2{
+  background-color: #0F0F0F;
+  color:#FDF12F;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+}
+
+.close-btn2:hover{
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -198,6 +277,8 @@
   .nav-op{
     display: none;
   }
+
+  
 }
 
 @media(max-width:770px){
@@ -212,6 +293,12 @@
   .burger-icon{
     margin-right:2rem
   }
+  .search-icon {
+    display: block;
+    cursor: pointer;
+  }
 
-  
+  .navbar-search {
+    display: none;
+  }
 }
