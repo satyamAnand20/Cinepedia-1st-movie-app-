@@ -38,7 +38,7 @@
   padding-top:0.22rem;
   font-size:2.43rem;
   display: none;
-  color:#FDF12F;
+  /* color:#FDF12F; */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -48,8 +48,13 @@
 
 .search-icon{
   /* display:none; */
-  color:#FDF12F;
-  font-size:2rem
+  /* color:#FDF12F; */
+  font-size:1.92rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+.search-icon:hover{
+  transform: scale(1.2);
 }
 
 .navbar-search{
@@ -291,11 +296,14 @@
   }
 
   .burger-icon{
-    margin-right:2rem
+    margin-right:2rem;
+    margin-left:1.5rem;
+
   }
   .search-icon {
     display: block;
     cursor: pointer;
+    margin-left:auto ;
   }
 
   .navbar-search {
