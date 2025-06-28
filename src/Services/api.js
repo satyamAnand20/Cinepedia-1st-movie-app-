@@ -1,7 +1,7 @@
 const API_KEY = import.meta.env.VITE_API_KEY;
 const BASE_URL = "https://www.omdbapi.com/";
 
-const keywords = ["action", "comedy", "romance", "thriller", "drama", "sci-fi"];
+const keywords = ["action", "comedy", "thriller", "drama", "sci-fi"];
 
 export const getPopularMovies = async () => {
   let allMovies = [];
