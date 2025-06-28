@@ -1,13 +1,10 @@
 .about-main {
-  flex: 1; /* 👈 Fills available space inside .main-content */
-  /* border: 2px solid white; */
-  
+  flex: 1; 
 }
 
 .about-site{
   box-sizing: border-box;
   margin:20px 0px 20px 0px;
-  /* border:2px solid yellow; */
   padding:13px;
   border-radius:17px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -52,16 +49,6 @@
 .linkedin-link{
   margin-top:10px;
 }
-
-
-/* .about-dev-2nd img {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.about-dev-2nd img:hover {
-  transform: scale(1.1);
-} */
 
 .para-1{
   font-size:17px;
