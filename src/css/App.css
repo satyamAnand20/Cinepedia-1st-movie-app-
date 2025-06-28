@@ -1,0 +1,12 @@
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  /* height: calc(100vh - 4rem); */
+  display: flex;
+  flex-direction: column;
+  background-color: #0F0F0F;
+}
+
