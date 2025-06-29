@@ -17,14 +17,6 @@
   }
 }
 
-/* .movies-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-} */
 
 .movies-grid {
   display: grid;
@@ -39,6 +31,20 @@
 @media(max-width:770px) {
   .home{
     padding:0rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .home {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

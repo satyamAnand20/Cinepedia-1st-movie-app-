@@ -1,5 +1,6 @@
 import "../css/MovieCard.css";
 import { useContext } from "react";
+import { FaHeart } from "react-icons/fa6";
 import { FavouritesContext } from "../Contexts/FavouritesContext";
 function MovieCard({ movie }) {
   const { favourites, addFavourites, removeFavourites } =
@@ -32,6 +33,22 @@ function MovieCard({ movie }) {
             ) : (
               <span className="favourite-word">Add to Favourites</span>
             )}
+          </button>
+          <button
+            className="heart-fav-btn"
+            onClick={() => {
+              !isFavourites
+                ? addFavourites(movie)
+                : removeFavourites(movie.imdbID);
+            }}
+          >
+            <FaHeart
+              className={
+                !isFavourites
+                  ? "white-heart-icon common-heart-icon"
+                  : "red-heart-icon common-heart-icon"
+              }
+            />
           </button>
         </div>
       </div>
