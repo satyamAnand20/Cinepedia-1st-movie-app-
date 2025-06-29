@@ -77,7 +77,14 @@
 
 .heart-fav-btn{
   display:none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
+
+.heart-fav-btn:focus{
+    outline: none;
+    box-shadow: none;
+  }
 
 .red-heart-icon{
   color:red;
@@ -157,9 +164,7 @@
     border: none;
     outline: none;
   }
-  .heart-fav-btn:focus{
-    outline: none;
-  }
+  
   .favourite-btn{
     display: none;
   }
