@@ -19,42 +19,43 @@ function MovieCard({ movie }) {
           alt={movie.Title}
         />
 
-        <div className="movie-overlay">
-          <button
-            className="favourite-btn"
-            onClick={() => {
-              !isFavourites
-                ? addFavourites(movie)
-                : removeFavourites(movie.imdbID);
-            }}
-          >
-            {isFavourites ? (
-              <span className="favourite-word">Remove from Favourites</span>
-            ) : (
-              <span className="favourite-word">Add to Favourites</span>
-            )}
-          </button>
-          <button
-            className="heart-fav-btn"
-            onClick={() => {
-              !isFavourites
-                ? addFavourites(movie)
-                : removeFavourites(movie.imdbID);
-            }}
-          >
-            <FaHeart
-              className={
-                !isFavourites
-                  ? "white-heart-icon common-heart-icon"
-                  : "red-heart-icon common-heart-icon"
-              }
-            />
-          </button>
-        </div>
+        <div className="movie-overlay"></div>
       </div>
       <div className="movie-info">
         <h3>{movie.Title}</h3>
         <p>{movie.Year}</p>
+
+        <button
+          className="favourite-btn"
+          onClick={() => {
+            !isFavourites
+              ? addFavourites(movie)
+              : removeFavourites(movie.imdbID);
+          }}
+        >
+          {isFavourites ? (
+            <span className="favourite-word">Remove from Favourites</span>
+          ) : (
+            <span className="favourite-word">Add to Favourites</span>
+          )}
+        </button>
+
+        <button
+          className="heart-fav-btn"
+          onClick={() => {
+            !isFavourites
+              ? addFavourites(movie)
+              : removeFavourites(movie.imdbID);
+          }}
+        >
+          <FaHeart
+            className={
+              !isFavourites
+                ? "white-heart-icon common-heart-icon"
+                : "red-heart-icon common-heart-icon"
+            }
+          />
+        </button>
       </div>
     </div>
   );
