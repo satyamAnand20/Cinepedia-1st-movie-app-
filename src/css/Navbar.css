@@ -25,7 +25,7 @@
   padding: 0.5rem 1rem;
   border-radius: 6px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s;
-  color:#FDF12F;
+  color:white;
 }
 
 .nav-link:hover {
@@ -105,17 +105,18 @@
   font-size: 1rem;
   padding: 0.3rem 1.3rem;
   height:37px;
-  background-color: #FDF12F;
+  background-color:#FDF12F;
   color: black;
   border-radius: 6px;
   font-weight: 500;
   transition: background-color 0.2s;
   white-space: nowrap;
   border: none; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .search-button:hover {
-  background-color: #dad005;
+  transform: scale(1.05);
 }
 
 
@@ -150,7 +151,7 @@
 
 .dropdown-link {
   padding: 1rem 1.5rem;
-  color: #FDF12F;
+  color: white;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: background-color 0.2s;
@@ -171,13 +172,14 @@
   margin-top:0.7rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: none;
-  color: #FDF12F;
+  color: white;
   background-color: #0F0F0F;
 
 }
 
 .close-btn:hover{
   transform: scale(1.1);
+  color:#FDF12F
 }
 
 .search-icon{
@@ -242,13 +244,14 @@
 
 .close-btn2{
   background-color: #0F0F0F;
-  color:#FDF12F;
+  color:white;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: none;
 }
 
 .close-btn2:hover{
   transform: scale(1.1);
+  color:#FDF12F
 }
 
 @media (max-width: 768px) {
