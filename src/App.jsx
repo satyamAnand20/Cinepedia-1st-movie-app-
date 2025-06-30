@@ -1,19 +1,22 @@
-
 import "./css/App.css";
 import MovieCard from "./components/MovieCard";
 import Home from "./Pages/home";
 import Navbar from "./components/Navbar";
 import Favourites from "./Pages/Favourites";
 import About from "./Pages/About";
+import SearchPage from "./Pages/SearchPage";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getPopularMovies, searchMovies } from "./Services/api";
+import { useNavigate } from "react-router-dom";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [searchedMovies, setSearchedMovies] = useState([]);
+  const navigate = useNavigate();
 
   // Load popular movies on first render
   useEffect(() => {
@@ -41,8 +44,9 @@ function App() {
     setLoading(true);
     try {
       const results = await searchMovies(searchQuery);
-      setMovies(results);
+      setSearchedMovies(results);
       setError(null);
+      navigate("/search");
     } catch (err) {
       console.error(err);
       setError("Search failed.");
@@ -62,16 +66,20 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={
-              <Home
-                movies={movies}
-                loading={loading}
-                error={error}
-              />
-            }
+            element={<Home movies={movies} loading={loading} error={error} />}
           />
           <Route path="/favourites" element={<Favourites />} />
           <Route path="/about" element={<About />} />
+          <Route
+            path="/search"
+            element={
+              <SearchPage
+                searchedMovies={searchedMovies}
+                loading={loading}
+                error={error}
+              ></SearchPage>
+            }
+          />
         </Routes>
       </main>
     </div>
@@ -79,4 +87,3 @@ function App() {
 }
 
 export default App;
-

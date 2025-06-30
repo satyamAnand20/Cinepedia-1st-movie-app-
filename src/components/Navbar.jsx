@@ -7,6 +7,11 @@ import { useState } from "react";
 function Navbar({ searchQuery, setSearchQuery, onSubmit }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showSearchInput, setShowSearchInput] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit(e);
+    setShowSearchInput(false);
+  };
 
   return (
     <nav className="navbar">
@@ -44,7 +49,7 @@ function Navbar({ searchQuery, setSearchQuery, onSubmit }) {
           >
             ✕
           </button>
-          <form onSubmit={onSubmit} className="search-form2">
+          <form onSubmit={handleSubmit} className="search-form2">
             <input
               type="text"
               placeholder="Search for movies..."
@@ -52,11 +57,14 @@ function Navbar({ searchQuery, setSearchQuery, onSubmit }) {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button type="submit" className="search-button">
+            {/* <button type="submit" className="search-button">
               Search
-            </button>
+            </button> */}
           </form>
         </div>
+        // <div>
+        // {onsubmit && setShowSearchInput(false)}
+        // </div>
       )}
 
       <div className="navbar-links">
