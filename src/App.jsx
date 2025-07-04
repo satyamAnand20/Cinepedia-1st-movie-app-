@@ -43,7 +43,7 @@ function App() {
 
     setLoading(true);
     try {
-      const results = await searchMovies(searchQuery);
+      const results = await searchMovies(searchQuery.trim());
       setSearchedMovies(results);
       setError(null);
       navigate("/search");
