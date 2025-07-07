@@ -55,7 +55,7 @@ function About() {
         </p>
         <div className="social-icons">
         <a
-            href="https://www.linkedin.com/in/satyam-anand-14ab64269"
+            href="https://www.linkedin.com/in/satyam-anand-32a525372/"
             target="_blank"
             className="linkedin-link"
           >
