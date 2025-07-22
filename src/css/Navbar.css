@@ -9,7 +9,7 @@
 }
 
 .navbar-brand a {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   font-weight: bold;
   color:#FDF12F;
   
@@ -70,13 +70,11 @@
 
 .search-form {
   width: 100%;
-  
   display: flex;
   gap: 1rem;
   padding: 0 1rem;
   box-sizing: border-box;
-  
-  background-color: #333;
+  background-color: #31313138;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 8px;
@@ -202,7 +200,6 @@
   justify-content: flex-start;
   align-items: center;
   padding-top: 2rem;
-
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(10px);  
@@ -254,6 +251,20 @@
   color:#FDF12F
 }
 
+@media(max-width:1111px){
+  .search-button{
+    display: none;
+  }
+
+  .burger-icon{
+    display: block;
+  }
+
+  .nav-op{
+    display: none;
+  } 
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;
@@ -273,21 +284,7 @@
   
 }
 
-@media(max-width:1111px){
-  .search-button{
-    display: none;
-  }
 
-  .burger-icon{
-    display: block;
-  }
-
-  .nav-op{
-    display: none;
-  }
-
-  
-}
 
 @media(max-width:770px){
   .navbar-search{

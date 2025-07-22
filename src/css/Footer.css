@@ -1,5 +1,5 @@
 .cine-footer {
-  background-color: #0F0F0F;
+  background-color:#0F0F0F;
   color: #fff;
   padding: 1.5rem 0;
   border-top: 1px solid #333;
@@ -29,7 +29,7 @@
 .footer-icons a {
   color: white;
   margin: 0 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   transition: color 0.3s ease;
 }
 

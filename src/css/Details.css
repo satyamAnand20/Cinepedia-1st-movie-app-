@@ -3,14 +3,9 @@
   font-family: Arial, sans-serif;
 }
 .details-page .main-container{
-  padding: 2rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
   border-radius: 12px; 
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.023), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);  
-  border:1px solid rgba(255, 255, 255, 0.116);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  
 }
 .details-page .poster-info-div {
   display: flex;
@@ -53,6 +48,7 @@
   font-size: 2.5rem;
   margin: 0;
   color: #f9f9f9;
+  line-height: 1.3;
 }
 
 .details-page .year-runtime {
@@ -213,16 +209,20 @@
 /* MEDIA QUERIES*/
 
 @media (max-width:777px){
+  .details-page .main-container{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+  }
 
   .details-page .movie-info h2{
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .details-page .poster-favbtn{
     flex:1;
   }
   .details-page .movie-info{
     padding-right: 0rem;
-    gap:0.5rem
+    gap:0.7rem
   }
   .details-page .all-p{
     font-size: 1.2rem;
@@ -241,9 +241,15 @@
   .details-page{
     padding:0.1rem;
   }
+
+  .details-page .poster-info-div{
+    gap:0rem;
+  }
+  
   .details-page .movie-title-mobile{
     display: block;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    line-height: 1.4;
   }
   .details-page .year-runtime-mobile{
     display: flex;
@@ -251,6 +257,8 @@
     font-weight: bold;
     color: #ccc;
     margin-bottom: 1rem;
+    margin-top: 0.5rem;
+
   }
   .details-page .year-runtime-mobile .by-10{
     font-size:medium;
@@ -279,18 +287,23 @@
     font-size: 1.1rem;
   }
   .details-page .main-container{
-    padding-top:1.5rem;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
   }
 }
 
 
 
 @media (max-width:569px){
-  .details-page .movie-info h2{
-    font-size: 1.6rem;
+  .details-page .main-container{
+    padding-left:0rem;
+    padding-right:0rem;
   }
   .details-page .all-p{
     font-size: 1.08rem;
+  }
+  .details-page .movie-title-mobile{
+    font-size: 1.8rem;
   }
  
 }
@@ -298,11 +311,11 @@
 
 
 @media (max-width:481px){
-  .details-page .movie-info h2{
-    font-size: 1.4rem;
-  }
   .details-page .all-p{
     font-size: 1rem;
+  }
+  .details-page .movie-title-mobile{
+    font-size: 1.6rem;
   }
  
 }

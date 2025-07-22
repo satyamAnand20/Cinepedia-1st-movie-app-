@@ -62,6 +62,15 @@
   animation: fadeIn 0.3s ease-out forwards;
 }
 
+@media(max-width:645px){
+  .favourites-grid{
+   padding-left: 0rem;
+   padding-right: 0rem;
+  }
+  }
+
+
+
 @media(max-width:620px){
   .favourites-grid {
     grid-template-columns: repeat(2, 1fr);
