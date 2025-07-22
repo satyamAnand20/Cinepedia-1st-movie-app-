@@ -7,7 +7,7 @@
   margin:20px 0px 20px 0px;
   padding:13px;
   border-radius:17px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.023), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);  
   border:1px solid rgba(255, 255, 255, 0.18);
@@ -28,7 +28,7 @@
   /* border:2px solid red; */
   padding:13px;
   border-radius:17px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.023), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);  
   border:1px solid rgba(255, 255, 255, 0.18);

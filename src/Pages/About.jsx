@@ -1,7 +1,6 @@
 import "../css/About.css";
 import linkedin from "../assets/linkedin.svg";
 
-
 function About() {
   return (
     <div className="about-main">
@@ -53,15 +52,15 @@ function About() {
           <br />
           Feel free to check out more of my work or get in touch!
         </p>
-        <div className="social-icons">
-        <a
+        {/* <div className="social-icons">
+          <a
             href="https://www.linkedin.com/in/satyam-anand-32a525372/"
             target="_blank"
             className="linkedin-link"
           >
             <img src={linkedin} alt="linkedin" width="53" height="53"></img>
           </a>
-          </div>
+        </div> */}
       </div>
     </div>
   );

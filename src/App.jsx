@@ -5,10 +5,13 @@ import Navbar from "./components/Navbar";
 import Favourites from "./Pages/Favourites";
 import About from "./Pages/About";
 import SearchPage from "./Pages/SearchPage";
+import Details from "./Pages/details";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getPopularMovies, searchMovies } from "./Services/api";
 import { useNavigate } from "react-router-dom";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -62,6 +65,7 @@ function App() {
         setSearchQuery={setSearchQuery}
         onSubmit={handleSearchSubmit}
       />
+      <ScrollToTop /> 
       <main className="main-content">
         <Routes>
           <Route
@@ -80,8 +84,10 @@ function App() {
               ></SearchPage>
             }
           />
+          <Route path="/details/:id" element={<Details />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }

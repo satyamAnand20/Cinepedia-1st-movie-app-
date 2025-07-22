@@ -5,19 +5,15 @@
   background-color: #1a1a1a;
   height: 100%;
   display: flex;
-  flex-direction: column;
- 
+  flex-direction: column; 
 }
-
 
 
 .movie-poster {
   position: relative;
   aspect-ratio: 2/3;
-  width: 100%;
-   
+  width: 100%; 
 }
-
 
 
 .favourite-word{
@@ -62,7 +58,9 @@
   /* border:1px solid rgba(255, 255, 255, 0.18); */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
+
 
 .favourite-btn:focus {
   outline: none;
@@ -82,34 +80,40 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .heart-fav-btn{
   display:none;
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
 
+
 .heart-fav-btn:focus{
     outline: none;
     box-shadow: none;
   }
 
+
 .red-heart-icon{
   color:red;
-
 }
+
 
 .white-heart-icon{
   color:white;
-
 }
+
+
 .common-heart-icon{
   font-size:1.5em;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+
 .common-heart-icon:hover{
   transform: scale(1.2);
 }
+
 
 .rating-select {
   background-color: rgba(0, 0, 0, 0.7);
@@ -121,6 +125,7 @@
   margin-top: 0.5rem;
 }
 
+
 .movie-info {
   padding: 1rem;
   flex: 1;
@@ -130,25 +135,37 @@
   /* line-height: 1.2rem; */
 }
 
+
 .movie-info h3 {
   font-size: 1rem;
   margin: 0;
   overflow: hidden;
-text-overflow: ellipsis;
-white-space: nowrap;
-
-
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+
+.movie-info h3:hover{
+  color:#ffd700;
+}
+
 
 .movie-info p {
   color: #999;
   font-size: 0.9rem;
 }
 
+
 .user-rating {
   color: #ffd700;
   font-size: 0.9rem;
   margin-top: auto;
+}
+
+
+.no-style-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -164,6 +181,7 @@ white-space: nowrap;
   }
 
 }
+
 
 @media(max-width:564px){
   .heart-fav-btn{
@@ -191,6 +209,7 @@ white-space: nowrap;
     }
 }
 
+
   @media(max-width :531px){
     .heart-fav-btn{
       font-size: 0.68rem;
@@ -204,6 +223,7 @@ white-space: nowrap;
     
   }
 
+
   @media(max-width :415px){
     .heart-fav-btn{
       font-size: 0.6rem;
@@ -216,6 +236,7 @@ white-space: nowrap;
       margin-top:0.36rem;
     }
 }
+
 
   @media(max-width :361px){
     .heart-fav-btn{
@@ -233,12 +254,7 @@ white-space: nowrap;
     .movie-info p{
       font-size: 0.8rem;
 
-    }
-    
-    
-
-  
-    
+    }    
   }
 
   

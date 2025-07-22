@@ -16,7 +16,7 @@ function Navbar({ searchQuery, setSearchQuery, onSubmit }) {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">Cinepedia</Link>
+        <Link to="/">Cinepedia🎬</Link>
       </div>
 
       <div className="navbar-search">

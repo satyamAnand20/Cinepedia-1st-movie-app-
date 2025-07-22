@@ -295,11 +295,11 @@
   }
 
   .navbar-brand{
-    margin-left:2rem;
+    margin-left:1rem;
   }
 
   .burger-icon{
-    margin-right:2rem;
+    margin-right:1rem;
     margin-left:1.5rem;
 
   }
@@ -311,5 +311,17 @@
 
   .navbar-search {
     display: none;
+  }
+}
+
+@media (max-width:639px){
+  .navbar{
+    padding:1rem 0rem 1rem 0rem;
+  }
+  .navbar-brand{
+    margin-left:1rem;
+  }
+  .burger-icon{
+    margin-right: 1rem;
   }
 }
