@@ -310,6 +310,13 @@
     padding-top:0rem;
     padding-bottom:0.5rem;
   }
+  .details-page .common-heart-icon{
+  transition: none !important;
+  }
+  .details-page .common-heart-icon:hover{
+  transform: none !important;
+  }
+
 }
 
 
@@ -332,7 +339,7 @@
 
 @media (max-width:481px){
   .details-page .all-p{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .details-page .movie-title-mobile{
     font-size: 1.6rem;
@@ -340,11 +347,7 @@
  
 }
 
-@media (hover: hover) {
-  .details-page .common-heart-icon:hover {
-    transform: scale(1.2);
-  }
-}
+
 
 
 
