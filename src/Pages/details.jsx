@@ -3,6 +3,7 @@ import { getDetailsById } from "../Services/api";
 import { useEffect, useState } from "react";
 import "../css/Details.css";
 import { LiaImdb } from "react-icons/lia";
+import { FaHeart } from "react-icons/fa6";
 import { useContext } from "react";
 import { FavouritesContext } from "../Contexts/FavouritesContext";
 
@@ -73,15 +74,13 @@ function Details() {
                     : removeFavourites(movie.imdbID);
                 }}
               >
-                {isFavourites ? (
-                  <span className="details-favourite-word">
-                    Remove from Favourites
-                  </span>
-                ) : (
-                  <span className="details-favourite-word">
-                    Add to Favourites
-                  </span>
-                )}
+                <FaHeart
+                  className={
+                    !isFavourites
+                      ? "white-heart-icon common-heart-icon"
+                      : "red-heart-icon common-heart-icon"
+                  }
+                />
               </button>
             </div>
             <div className="movie-info">
