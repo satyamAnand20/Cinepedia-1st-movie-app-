@@ -1,7 +1,7 @@
 const API_KEY = import.meta.env.VITE_API_KEY;
 const BASE_URL = "https://www.omdbapi.com/";
 
-const keywords = ["fight", "fast", "saga", "kung-fu", "karate kid"];
+const keywords = ["fight", "adventure", "saga", "kung-fu", "fast"];
 
 export const getPopularMovies = async () => {
   let allMovies = [];
