@@ -340,5 +340,11 @@
  
 }
 
+@media (hover: hover) {
+  .details-page .common-heart-icon:hover {
+    transform: scale(1.2);
+  }
+}
+
 
 
