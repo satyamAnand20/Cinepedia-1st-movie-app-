@@ -332,7 +332,7 @@
   .details-page .movie-title-mobile{
     font-size: 1.8rem;
   }
- 
+  
 }
 
 
@@ -343,6 +343,9 @@
   }
   .details-page .movie-title-mobile{
     font-size: 1.7rem;
+  }
+  .details-page h3{
+    font-size: 1.26rem;
   }
  
 }
