@@ -138,7 +138,6 @@
   flex-direction: column;
   justify-content:flex-start;
   align-items: center;
-
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(10px);  
@@ -154,9 +153,8 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: background-color 0.2s;
   width:100vw;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  
-  
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  font-size:1.1rem;
 }
 
 .dropdown-link:hover {
@@ -164,7 +162,7 @@
   color:#FDF12F;
   transform: scale(1.02);
 }
-/* hello */
+
 
 .close-btn{
   margin-top:0.7rem;
@@ -180,8 +178,9 @@
   color:#FDF12F
 }
 
-.search-icon{
-  display:none}
+ .search-icon{
+  display:none
+  }
 
   .search-form2{
     display: none;
@@ -250,6 +249,11 @@
   transform: scale(1.1);
   color:#FDF12F
 }
+
+
+
+/*MEDIA QUERIES*/
+
 
 @media(max-width:1111px){
   .search-button{

@@ -4,7 +4,6 @@
 
 .about-site{
   box-sizing: border-box;
-  margin:20px 0px 20px 0px;
   padding:13px;
   border-radius:17px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.023), rgba(255, 255, 255, 0));
@@ -24,8 +23,7 @@
 
 .about-dev{
   box-sizing:border-box;
-  margin:35px 0px 20px 0px;
-  /* border:2px solid red; */
+  margin:30px 0px 0px 0px;
   padding:13px;
   border-radius:17px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.023), rgba(255, 255, 255, 0));
@@ -52,4 +50,10 @@
 
 .para-1{
   font-size:17px;
+}
+
+@media (max-width:645px){
+  .about-dev{
+    margin-top: 23px;
+  }
 }
