@@ -311,10 +311,11 @@
     padding-bottom:0.5rem;
   }
   .details-page .common-heart-icon{
-  transition: none !important;
+    font-size: 1.25rem;
+    transition: none !important;
   }
   .details-page .common-heart-icon:hover{
-  transform: none !important;
+    transform: none !important;
   }
 
 }
