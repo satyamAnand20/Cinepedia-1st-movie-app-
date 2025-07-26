@@ -11,7 +11,7 @@
 .navbar-brand a {
   font-size: 1.65rem;
   font-weight: bold;
-  color:#FDF12F;
+  color:#facc15;
   
 }
 
@@ -29,7 +29,7 @@
 }
 
 .nav-link:hover {
-  color:#FDF12F;
+  color:#facc15;
   background-color: rgba(255, 255, 255, 0.1);
   transform:scale(1.1);
 }
@@ -103,7 +103,7 @@
   font-size: 1rem;
   padding: 0.3rem 1.3rem;
   height:37px;
-  background-color:#FDF12F;
+  background-color:#facc15;
   color: black;
   border-radius: 6px;
   font-weight: 500;
@@ -159,7 +159,7 @@
 
 .dropdown-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color:#FDF12F;
+  color:#facc15;
   transform: scale(1.02);
 }
 
