@@ -19,6 +19,7 @@ function MovieCard({ movie }) {
                   ? movie.Poster
                   : "https://via.placeholder.com/200x300?text=No+Image"
               }
+              loading="lazy"
               alt={movie.Title}
             />
 
